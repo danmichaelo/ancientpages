@@ -1,0 +1,12 @@
+[db]
+host=nowiki.labsdb
+db=nowiki_p
+user=
+passwd=
+
+[mw]
+host=no.wikipedia.org
+user=
+passwd=
+clients_useragent=AncientPagesBot. Run by User:XYZ
+
