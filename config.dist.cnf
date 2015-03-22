@@ -9,4 +9,6 @@ host=no.wikipedia.org
 user=
 passwd=
 clients_useragent=AncientPagesBot. Run by User:XYZ
+page=Wikipedia:Stillestående sider
+summary=Bot: Oppdaterer liste 
 
