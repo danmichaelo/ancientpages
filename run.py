@@ -29,8 +29,7 @@ def output_results(results, config):
         title = res[0].decode('utf-8')
         txt += u'# [[%s]] (%s)\n' % (title, dt)
 
-    site = Site(('https', config['host']), clients_useragent=config['clients_useragent'])
-    site.login(config['user'], config['passwd'])
+    site = Site(('https', config['host']), clients_useragent=config['clients_useragent'], **config)
     page = site.pages[config['page']]
 
     oldtxt = page.text()
