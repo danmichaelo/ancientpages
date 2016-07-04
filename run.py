@@ -48,8 +48,7 @@ def output_results(results, config):
             x = u"[[{}]] ({})".format(title, dt)
         txt += u'# {}\n'.format(x)
 
-    site = Site(('https', config['host']), clients_useragent=config['clients_useragent'])
-    site.login(config['user'], config['passwd'])
+    site = Site(('https', config['host']), clients_useragent=config['clients_useragent'], **config)
     pagename = config['page'].decode('utf-8')
     page = site.pages[pagename]
     if not page.exists:

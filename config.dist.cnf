@@ -6,8 +6,10 @@ passwd=
 
 [mw]
 host=no.wikipedia.org
-user=
-passwd=
+client_secret=
+client_token=
+access_secret=
+access_token=
 clients_useragent=AncientPagesBot. Run by User:XYZ
 page=Wikipedia:Stillestående sider
 summary=Bot: Oppdaterer liste 
